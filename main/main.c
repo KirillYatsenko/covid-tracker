@@ -16,7 +16,7 @@
 #include "sntp-time.h"
 
 #define TAG "DATA"
-#define COUNTRY "ukraine"
+#define COUNTRY CONFIG_COUNTRY
 
 void fetchTask(void *args);
 

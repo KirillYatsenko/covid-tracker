@@ -9,8 +9,8 @@
 #include "cJSON.h"
 #include "fetch.h"
 
-#define SSID "AndroidAP"
-#define PASSWORD "12345678"
+#define SSID CONFIG_SSID
+#define PASSWORD CONFIG_PASSWORD
 
 char *TAG = "CONNECTION";
 
@@ -58,8 +58,8 @@ void wifiInit()
   wifi_config_t wifi_config =
       {
           .sta = {
-              .ssid = CONFIG_WIFI_SSID,
-              .password = CONFIG_WIFI_PASSWORD}};
+              .ssid = CONFIG_SSID,
+              .password = PASSWORD}};
   esp_wifi_set_config(ESP_IF_WIFI_STA, &wifi_config);
   ESP_ERROR_CHECK(esp_wifi_start());
 }
