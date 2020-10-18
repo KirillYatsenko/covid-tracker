@@ -13,8 +13,8 @@
 
 #define TAG "DISPLAY"
 
-#define PIN_SDA 5
-#define PIN_SCL 4
+#define PIN_SDA 21
+#define PIN_SCL 22
 
 
 static u8g2_t u8g2; // a structure which will contain all the data for one display
